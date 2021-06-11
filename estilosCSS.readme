@@ -1,0 +1,123 @@
+a/* comentarios en css */
+/*variables*/
+:root{
+    --color_rojo:rgb(252, 93, 93);
+    --color_verde:green;
+    --color_oro: #ffbf00;
+}
+
+h1{
+    color: var(--color_oro);
+    background-color: var(--color_rojo);
+}
+
+
+/*tipos de caja*/
+/*inline, uno al lado del otro*/
+/*block, uno debajo del otro*/
+/*inline-block, una fusion de ambos*/
+/*para que agarre el width y el height, se escribe display:inline-block;*/
+
+p{
+    border: 5px dashed purple;
+    text-decoration: none;
+}
+
+nav{
+    background-color: violet;
+    text-align: center;
+}
+
+/*pseudo-clases*/
+ol:hover{
+    background-color: var(--color_oro);
+}
+ul:hover{
+    background-color: var(--color_rojo);
+}
+p::first-letter{
+    font-size: 45px;
+    color:var(--color_rojo)
+}
+
+/*...........selectores..........*/
+/*de tipo*/
+/*p,h1,a etc*/
+/*de clase*/
+.destacado{
+    color: var(--color_oro);
+    font-weight: bold;
+}
+/*de id*/
+#importante{
+    font-size: 30px;
+}
+#muy-importante{
+    font-size: 20px;
+}
+/*de atributos*/
+a[href="index3.html"]{
+    color:yellowgreen;
+}
+img[src="Captura de pantalla (5).png"]{
+    width: 320px;
+}
+/*hijos*/
+nav > p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+/*
+POSISCION.......
+
+static: es por default y las propiedades top, left, bottom y z-index, no tinen efecto.
+
+relative: se posiciona de acuerdo al flujo norma, pero las propiedades to, left, bottom, right, si tienen efecto.
+
+absolute: no se posiciona de acuerdo al flujo normal pero las propiedades si...
+Su posicion se calcula segun mar
+calcula su hubicacion de la etiqueta padre
+*/
+
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    font-size: 18px;
+}
+
+#pos-absoluto{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: cadetblue;
+}
+
+#pos-relativo{
+    position: relative; 
+    top: 50px;
+    left: 30px;
+}
+
+/*
+unidades de medida
+
+medidas rem y em es para hacer desarrollo responsive
+
+rem: permite establecer tamaños de fuentes basados en el tamaño
+del elemento html(root, si le coloco que valga 16 un rem eso me va a calcular, no importa el numero ya que se basa en la variable)
+
+em: sujeto al valor que halla en le valor html(root) si no que tambien puede heredar.
+
+*/
+/*
+html{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 30rem;
+}
+*/

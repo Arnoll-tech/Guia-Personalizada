@@ -1,0 +1,100 @@
+//si escribo la etiqueta script al final del documento html se ejecuta primero el html y luego el JS, pero si lo hago a la inversa se corre primero el JS 
+//alert("hola mundo");
+
+//variables................
+//var numero = 5;
+//var nombre = 'Arnoll';
+//tipo booleano, verdadero o falso
+//var verdadero = true;
+//var number2 = 10;
+//alert( number + number2 );
+//declara varibles constantes, no pueden ser cambiadas
+//const numero2 = 20;
+//numero --;
+//console.log(numero);
+
+//consicionales.......................
+//if (numero>10) {
+ //   console.log('verdadero 1');
+//} else {
+ //   console.log('falso 1');
+//}
+
+//if (!verdadero) {
+ //   console.log('verdadero 2');
+//} else {
+//    console.log('falso 2');
+//}
+
+//arrays, arreglos.....................
+//para sollo llamar a 'Arnoll' se cuenta desde cero hasta su hubicaion en este caso 3
+//var arreglo = [1,5,10,'Arnoll', true];
+
+//buble, ciclo for, while, doWhile, y switch.....................
+//for (var i = 0; i < 4; i++) {
+//    console.log(arreglo[i]);
+//}
+
+//var i = 0;
+//while (i<20) {
+//    console.log(i);
+//    i = i + 3;
+//}
+
+//var i = 0;
+//do {
+//    console.log(i);
+//    i = i + 3;
+//} while (i<20);
+
+//El switch nos sirve para escribir varios cambios en un solo ciclo con condiciones
+//var hora = 11;
+//switch (hora) {
+//    case 10:
+//        console.log('son las 10 de las mañana');
+//        break;
+//    case 15:
+//        console.log('son las 15 de la tarde');
+//        break;
+//    case 20:
+//        console.log('son las 20 de la noche');
+//        break;
+//    default:
+//        console.log('no tengo saludo para esa hora compadre, estoy agarrando señal carnal');
+//        break;
+//}
+
+//Funciones..................
+
+//function suma(num1,num2) {
+//    return console.log(num1 + num2);
+//}
+//suma(37 , 25);
+
+//console.log('var, let, y const');...........
+//let edad = 55;
+//edad = 60;
+//console.log(edad);
+//let sirve solo en ambientes solo se declara una vez
+//let index = 50;
+
+//for (let index = 0; index <= 10; index++) {
+//    console.log(index);
+//}
+//console.log(index);
+//let numero = 88;
+// if (true) {
+//     let numero =55;
+//     console.log('detro del if ' + numero);
+// }
+//console.log(numero);
+
+//solo se declara una sola vez, y se llama en cualquier otra parte del codigo con el mismo valor
+//const numero = 44;
+//console.log('esta es una constante ' + numero);
+//cunado se sabe que se podra reasignar u valor en el codigo se usa let, si a futuro no va a cambiar se usa const
+
+//DOM(document objet model)................
+var h1 = document.getElementById("titulo-uno");
+console.log(h1);
+
